@@ -1,0 +1,79 @@
+\hypertarget{classarcade_1_1LibrarySnake}{}\doxysection{arcade\+::Library\+Snake Class Reference}
+\label{classarcade_1_1LibrarySnake}\index{arcade::LibrarySnake@{arcade::LibrarySnake}}
+
+
+\mbox{\hyperlink{classarcade_1_1LibrarySnake}{Library\+Snake}} Class.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Snake.\+hpp$>$}
+
+Inheritance diagram for arcade\+::Library\+Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1LibrarySnake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classarcade_1_1LibrarySnake_a881db85d128e3794f2d9f785eee7c302}\label{classarcade_1_1LibrarySnake_a881db85d128e3794f2d9f785eee7c302}} 
+void \mbox{\hyperlink{classarcade_1_1LibrarySnake_a881db85d128e3794f2d9f785eee7c302}{update}} (\mbox{\hyperlink{namespacearcade_a54d6c9d87e08026217be5c1e2af73a77}{arcade\+::\+Event}} event, double delta\+\_\+time)
+\begin{DoxyCompactList}\small\item\em This function will update every states and elements of the game in relation to the event passed in parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1LibrarySnake_a62e7356daaea8072abf490a4d1a611a6}\label{classarcade_1_1LibrarySnake_a62e7356daaea8072abf490a4d1a611a6}} 
+\mbox{\hyperlink{structarcade_1_1Game}{arcade\+::\+Game}} \& \mbox{\hyperlink{classarcade_1_1LibrarySnake_a62e7356daaea8072abf490a4d1a611a6}{get\+Game\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Get the last updated map in order to draw it with a graphical library. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classarcade_1_1LibrarySnake_a4b236cc0e2ccd0c267468ebc291fa507}\label{classarcade_1_1LibrarySnake_a4b236cc0e2ccd0c267468ebc291fa507}} 
+const std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classarcade_1_1LibrarySnake_a4b236cc0e2ccd0c267468ebc291fa507}{get\+Map\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the map to print on the screen. \end{DoxyCompactList}\item 
+const std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classarcade_1_1LibrarySnake_a044e38572ae1f7351c3a88ea719e5de1}{get\+Next\+Lib}} () const
+\begin{DoxyCompactList}\small\item\em Get the Next Lib object Return a std\+::pair of the next\+Lib to set. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{classarcade_1_1LibrarySnake_a7bd2e6120513c57da70fadeadeabbe53}{get\+Asset\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the Asset Path object get the asset\+Path for the graphical\+Lib. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classarcade_1_1LibrarySnake}{Library\+Snake}} Class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classarcade_1_1LibrarySnake_a7bd2e6120513c57da70fadeadeabbe53}\label{classarcade_1_1LibrarySnake_a7bd2e6120513c57da70fadeadeabbe53}} 
+\index{arcade::LibrarySnake@{arcade::LibrarySnake}!getAssetPath@{getAssetPath}}
+\index{getAssetPath@{getAssetPath}!arcade::LibrarySnake@{arcade::LibrarySnake}}
+\doxysubsubsection{\texorpdfstring{getAssetPath()}{getAssetPath()}}
+{\footnotesize\ttfamily const std\+::string arcade\+::\+Library\+Snake\+::get\+Asset\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Asset Path object get the asset\+Path for the graphical\+Lib. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGame_a4f3213e26dc8b31d170afa114d538658}{arcade\+::\+IGame}}.
+
+\mbox{\Hypertarget{classarcade_1_1LibrarySnake_a044e38572ae1f7351c3a88ea719e5de1}\label{classarcade_1_1LibrarySnake_a044e38572ae1f7351c3a88ea719e5de1}} 
+\index{arcade::LibrarySnake@{arcade::LibrarySnake}!getNextLib@{getNextLib}}
+\index{getNextLib@{getNextLib}!arcade::LibrarySnake@{arcade::LibrarySnake}}
+\doxysubsubsection{\texorpdfstring{getNextLib()}{getNextLib()}}
+{\footnotesize\ttfamily const std\+::pair$<$ int, int $>$ arcade\+::\+Library\+Snake\+::get\+Next\+Lib (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the Next Lib object Return a std\+::pair of the next\+Lib to set. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::pair$<$int, int$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGame_adec89a997efb83d8eec6701c8f8d5dfc}{arcade\+::\+IGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Games/\+Snake/Library\+Snake.\+hpp\item 
+src/\+Games/\+Snake/Library\+Snake.\+cpp\end{DoxyCompactItemize}

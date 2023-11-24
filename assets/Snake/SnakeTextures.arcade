@@ -1,0 +1,15 @@
+snake_head_up 1 0 0 8 8 1 1
+snake_head_left 2 8 0 8 8 1 1
+snake_head_down 3 16 0 8 8 1 1
+snake_head_right 4 24 0 8 8 1 1
+snake_tail_up 6 32 0 8 8 1 1
+snake_tail_right 7 40 0 8 8 1 1
+snake_tail_down 8 48 0 8 8 1 1
+snake_tail_left 9 56 0 8 8 1 1
+snake_body_corner_top_left 10 0 8 8 8 1 1
+snake_body_corner_top_right 11 8 8 8 8 1 1
+snake_body_corner_bottom_right 12 16 8 8 8 1 1
+snake_body_corner_bottom_left 13 24 8 8 8 1 1
+snake_body_horizontal 14 32 8 8 8 1 1
+snake_body_vertical 15 40 8 8 8 1 1
+fruit 16 48 8 8 8 1 1

@@ -1,0 +1,68 @@
+Arcade is an Epitech project, that have for goal to implement diffents, game and graphical libraries. After all, the goal is to have to possibility to share you\textquotesingle{}re libraries with another team that have the same architecture as you.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Configuration File}
+\DoxyCodeLine{}
+\DoxyCodeLine{So this configuration file is templated for the Sfml/SDL2 library that use sprites.}
+\DoxyCodeLine{}
+\DoxyCodeLine{description id pos\_x pos\_y width height scale\_x scale\_y}
+\DoxyCodeLine{Example :}
+\DoxyCodeLine{left\_top\_double\_corner 1 745 214 8 8 2 2}
+\DoxyCodeLine{}
+\DoxyCodeLine{So this configuration file is templated for the Ncurses library that don't use sprites.}
+\DoxyCodeLine{}
+\DoxyCodeLine{id:1}
+\DoxyCodeLine{print:W}
+\DoxyCodeLine{color\_pair:4}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{}
+\DoxyCodeLine{File to configure and fill the std::vector<arcade::Entity> entity stocked in the game structure.}
+\DoxyCodeLine{Type can be for example \{Player, Ghosts, Wall, Food, ...\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{id:1}
+\DoxyCodeLine{type:Player  <-\/-\/ Example}
+\DoxyCodeLine{x:0}
+\DoxyCodeLine{y:0}
+\DoxyCodeLine{dir\_x:0}
+\DoxyCodeLine{dir\_y:0}
+\DoxyCodeLine{speed:0}
+\DoxyCodeLine{display:1}
+\DoxyCodeLine{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Usage/\+Examples}\label{md_README_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}IGraphical.hpp"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}IGame.hpp"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Main function}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[])}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    initLibrary<IGraphical> (argv[1], \_graphic, \_graphicLoader);}
+\DoxyCodeLine{    initLibrary<IGame> (\textcolor{stringliteral}{"{}./lib/arcade\_menu.so"{}}, \_game, \_gameLoader);}
+\DoxyCodeLine{    event\_t \textcolor{keyword}{event} = NOTHING;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{while} (\_event != Event::QUIT)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        now = std::chrono::high\_resolution\_clock::now();}
+\DoxyCodeLine{        ms\_double = now -\/ \_lastTime;}
+\DoxyCodeLine{        \_event = \_graphic-\/>getEvent(\_game-\/>getGameEntity());}
+\DoxyCodeLine{        \_game-\/>update(\_event, ms\_double.count());}
+\DoxyCodeLine{        changeLibrary();}
+\DoxyCodeLine{        \_graphic-\/>renderElement(\_game-\/>getGameEntity());}
+\DoxyCodeLine{        \_lastTime = now;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md2}{}\doxysection{Authors}\label{md_README_autotoc_md2}
+
+\begin{DoxyItemize}
+\item \href{https://www.github.com/tzhengtek}{\texttt{ @tzhengtek}}
+\item \href{https://www.github.com/AldricJourdain}{\texttt{ @\+Aldric\+Jourdain}}
+\item \href{https://ww.github.com/MathieuMarques}{\texttt{ @\+Mathieu\+Marques}} 
+\end{DoxyItemize}
