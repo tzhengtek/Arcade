@@ -100,4 +100,4 @@ int main(int argc, char *argv[])
 
 -   [@tzhengtek](https://www.github.com/tzhengtek)
 -   [@AldricJourdain](https://www.github.com/AldricJourdain)
--   [@MathieuMarques](https://ww.github.com/MathieuMarques)
+-   [@MathieuMarques](https://www.github.com/MathieuMarques)
